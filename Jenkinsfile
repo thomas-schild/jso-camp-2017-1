@@ -16,7 +16,7 @@ pipeline {
                 sh 'java -version'
             }
         }
-    },
+    }
     post {
         always {
             echo 'POST-step which runs always'
