@@ -10,7 +10,7 @@ pipeline {
                 '''
             }
         }
-        stage('Environment-info') {
+        stage('EnvironmentInfo') {
             steps {
                 sh 'uname -a'
                 sh 'java -version'
