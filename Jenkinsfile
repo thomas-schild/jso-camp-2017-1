@@ -1,21 +1,6 @@
 pipeline {
     agent any
     stages {
-        stage('Hello') {
-            steps {
-                sh 'echo "Hello Jenkins"'
-                sh '''
-                    echo "Multiline shell steps works too"
-                    ls -lah
-                '''
-            }
-        }
-        stage('EnvironmentInfo') {
-            steps {
-                sh 'uname -a'
-                sh 'java -version'
-            }
-        }
         stage('Build') {
             steps {
                 echo 'Building'
